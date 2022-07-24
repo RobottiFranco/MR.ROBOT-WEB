@@ -1,0 +1,58 @@
+html, title{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: robot;
+    src: url(/font/robot.ttf) format('truetype');
+  }
+
+body{
+    margin: 0;
+    background-color: black;
+    background-image: url(/img/elliot-index.jpg) ;
+    background-size: cover; /*hacer que la imagen ocupoe todo el contenedor*/
+    background-attachment: fixed;
+}
+
+header{
+    background-color: black;
+    color: whitesmoke;
+    padding: auto;
+    position: relative;
+}
+
+header div{
+    justify-content: center;
+    display: flex;
+    padding: 3rem 3rem;
+}
+
+header div a{
+    transition: color 0.3s ease;
+    font-size: 2rem;
+    position: relative;
+    padding: 0 3%;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: robot;
+}
+
+header div a:hover{
+    color: red;
+}
+
+section div{
+
+    display: flex;
+    position: relative;
+    top: 23rem;
+    justify-content: center;
+
+}
+
+section div p{
+    font-family: robot;
+    font-size: 9rem;
+    color: red;
+}
