@@ -15,7 +15,8 @@ body{
     background-attachment: fixed;
 }
 
-header{
+#header{
+    margin: 0;
     background-color: black;
     color: whitesmoke;
     padding: auto;
@@ -29,7 +30,7 @@ header div{
 }
 
 header div a{
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
     font-size: 2rem;
     position: relative;
     padding: 0 3%;
@@ -38,12 +39,11 @@ header div a{
     font-family: robot;
 }
 
-header div a:hover{
+header div a:hover, .titleCharacter:hover{
     color: red;
 }
 
 section div{
-
     display: flex;
     position: relative;
     top: 23rem;
@@ -51,8 +51,48 @@ section div{
 
 }
 
-section div p{
+#TEXT-MR-ROBOT-INDEX{
     font-family: robot;
     font-size: 9rem;
     color: red;
+}
+
+img{
+    border-style: ridge;
+    border-color: red;
+    margin: 2rem 4rem;
+    display: flex;
+
+    /* hace que la imagen no se deforme */
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.articleText{
+    border-style: ridge;
+    border-color: red;
+    background-color: black;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    display: flex;
+    margin: 2rem 4rem;
+}
+
+.text{
+    text-align: justify;
+    color: whitesmoke;
+    margin: 1rem 1rem;
+}
+
+.titleCharacter{
+    text-align: justify;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 1rem 1rem;
+    transition: color 0.4s ease;
+}
+
+.content{
+    display: flex;
 }
